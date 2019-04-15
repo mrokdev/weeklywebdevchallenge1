@@ -255,7 +255,7 @@ html {
   }
 
   label {
-    text-align: right;
+    text-align: left;
     color: #afafaf;
   }
   textarea {
