@@ -111,7 +111,7 @@ html {
     -moz-box-sizing: border-box;
     border-radius: 5px;
     outline: none;
-    border: 1px solid #ddd;
+    border: 1px solid #c6c6c6;
     margin-bottom: 20px;
     color: #afafaf;
   }
@@ -252,10 +252,12 @@ html {
   .checkbox-custom:focus+.checkbox-custom-label {
     outline: 1px solid #ddd;
     /* focus style */
+    
   }
 
   label {
-    text-align: left;
+    width: 85%;
+    text-align: justify;
     color: #afafaf;
   }
   textarea {
