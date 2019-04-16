@@ -35,7 +35,7 @@ html {
   }
   header{
     margin-top: 55px;
-    margin-bottom: 72px;
+    margin-bottom: 48px;
   }
 
   .header {
@@ -100,6 +100,7 @@ html {
   input[type=text],
   input[type=password],
   input[type=email],
+  input[type=tel],
   textarea,
   select {
     width: 85%;
@@ -171,7 +172,13 @@ html {
       padding: 5px\9;
     }
   } */
-
+  input[type=tel] {
+    background: url('img/phone.png'), linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
+    background-size: auto 50%;
+    background-position: center left 15px, center left 55px;
+    background-repeat: no-repeat;
+    padding-left: 70px;
+  }
   button {
     font-family: inherit;
     font-size: 24px;
@@ -209,7 +216,13 @@ html {
   }
 
   .short_btn {
-    width: 45%;
+    width: 40%;
+  }
+  .red_btn {
+    background-image: linear-gradient(to bottom, #f65e6f, #f13848);
+  }
+  .lock_btn {
+
   }
   .checkbox-custom {
     opacity: 0;

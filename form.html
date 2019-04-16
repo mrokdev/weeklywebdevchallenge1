@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -18,13 +19,13 @@
       <h2>Register form</h2>
       <div class="background">
         <form action="#" method="POST">
-          <input type="text" id="name" name="user_name" placeholder="Username">
+          <input type="text" id="name" name="user_name" placeholder="Username" autocomplete="name" onfocus="placeholderOff()">
           <br />
-          <input type="password" id="password" name="user_password" placeholder="Password">
+          <input type="password" id="password" name="user_password" placeholder="Password" autocomplete="new-password">
           <br />
-          <input type="password" id="confirm_password" name="user_password" placeholder="Confirm password">
+          <input type="password" id="confirm_password" name="user_password" placeholder="Confirm password" autocomplete="new-password">
           <br />
-          <input type="email" id="email" name="user_email" placeholder="Email">
+          <input type="email" id="emailRegister" name="userEmailRegister" placeholder="Email" autocomplete="email">
           <br />
           <select id="location" name="location">
             <option value="">Your location</option>
@@ -33,8 +34,8 @@
             <option value="Tokio">Tokio</option>
           </select>
           <br />
-          <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
-          <label for="checkbox-1" class="checkbox-custom-label">I have read and accept the terms of use.</label>
+          <input id="checkboxRegister" class="checkbox-custom" name="checkboxRegister" type="checkbox" checked>
+          <label for="checkboxRegister" class="checkbox-custom-label">I have read and accept the terms of use.</label>
           <br />
           <button type="submit">Sign up</button>
         </form>
@@ -48,7 +49,7 @@
           <br />
           <input type="email" id="emailSend" name="userEmailSend" placeholder="Your email">
           <br />
-          <textarea cols="1" rows="9" id="message" placeholder="Type your message..."></textarea>
+          <textarea cols="1" rows="9" id="emailMessage" placeholder="Type your message..."></textarea>
           <br />
           <input id="checkboxSend" class="checkbox-custom" name="checkboxSend" type="checkbox" checked>
           <label for="checkboxSend" class="checkbox-custom-label">Send a copy to my Email.</label>
@@ -62,13 +63,13 @@
       <h2>Sign In Form</h2>
       <div class="background">
         <form action="#" method="POST">
-          <input type="text" id="name" name="user_name" placeholder="Your name">
+          <input type="text" id="nameSignIn" name="nameSignIn" placeholder="Your name" autocomplete="name">
           <br />
-          <input type="password" id="signIn" name="userSignInEmail" placeholder="Your email">
+          <input type="password" id="passSignIn" name="passSignIn" placeholder="Your email" autocomplete="current-password">
           <br />
-          <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
-          <label for="checkbox-1" class="checkbox-custom-label">Remeber me.</label>
-          <button type="submit" class="short_btn">Send Email</button>
+          <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
+          <label for="checkboxSignIn" class="checkbox-custom-label">Remeber me.</label>
+          <button type="submit" class="short_btn">Sign In</button>
         </form>
       </div>
     </section>
@@ -76,17 +77,10 @@
       <h2>Recover Form</h2>
       <div class="background">
         <form action="#" method="POST">
-          <input type="text" id="name" name="user_name" placeholder="Your name">
-          <br />
-          <input type="email" id="email" name="user_email" placeholder="Your email">
-          <br />
-          <textarea cols="1" rows="9" id="message" placeholder="Type your meesege...">
-          </textarea>
-          <br />
-          <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
-          <label for="checkbox-1" class="checkbox-custom-label">Send a copy to my Email.</label>
-          <br />
-          <button type="submit">Send Email</button>
+          <input type="email" id="emailRecover" name="emailRecover" placeholder="Your email">
+          <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number">
+          <button type="submit" class="short_btn">Send</button>
+          <button type="submit" class="short_btn lock_btn">Done</button>
         </form>
       </div>
     </section>
@@ -94,17 +88,9 @@
       <h2>Subscribe Form</h2>
       <div class="background">
         <form action="#" method="POST">
-          <input type="text" id="name" name="user_name" placeholder="Your name">
-          <br />
-          <input type="email" id="email" name="user_email" placeholder="Your email">
-          <br />
-          <textarea cols="1" rows="9" id="message" placeholder="Type your meesege...">
-          </textarea>
-          <br />
-          <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
-          <label for="checkbox-1" class="checkbox-custom-label">Send a copy to my Email.</label>
-          <br />
-          <button type="submit">Send Email</button>
+          <input type="email" id="emailSubscribe" name="emailSubscribe" placeholder="Enter your Email" autocomplete="email">
+          <button type="submit"class="short_btn">Send Email</button>
+          <button type="submit"class="short_btn red_btn">No, thanks</button>
         </form>
       </div>
     </section>
