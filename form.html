@@ -5,7 +5,6 @@
   <title>Masteralb Creative</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="img/favicon.ico">
   <script src="script.js"></script>
@@ -19,7 +18,7 @@
       <h2>Register form</h2>
       <div class="background">
         <form action="#" method="POST">
-          <input type="text" id="name" name="user_name" placeholder="Username" autocomplete="name" onfocus="placeholderOff()">
+          <input type="text" id="User_name" name="user_name" placeholder="Username" autocomplete="name">
           <br />
           <input type="password" id="password" name="user_password" placeholder="Password" autocomplete="new-password">
           <br />
@@ -67,9 +66,11 @@
           <br />
           <input type="password" id="passSignIn" name="passSignIn" placeholder="Your email" autocomplete="current-password">
           <br />
-          <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
-          <label for="checkboxSignIn" class="checkbox-custom-label">Remeber me.</label>
-          <button type="submit" class="short_btn">Sign In</button>
+          <div class="btn">
+           <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
+            <label for="checkboxSignIn" class="checkbox-custom-label">Remeber me.</label>
+            <button type="submit" class="short_btn">Sign In</button>
+          </div>
         </form>
       </div>
     </section>
@@ -79,8 +80,10 @@
         <form action="#" method="POST">
           <input type="email" id="emailRecover" name="emailRecover" placeholder="Your email">
           <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number">
+          <div class="btn">
           <button type="submit" class="short_btn">Send</button>
           <button type="submit" class="short_btn lock_btn">Done</button>
+        </div>
         </form>
       </div>
     </section>
@@ -89,8 +92,10 @@
       <div class="background">
         <form action="#" method="POST">
           <input type="email" id="emailSubscribe" name="emailSubscribe" placeholder="Enter your Email" autocomplete="email">
-          <button type="submit"class="short_btn">Send Email</button>
-          <button type="submit"class="short_btn red_btn">No, thanks</button>
+          <div class="btn">
+            <button type="submit" class="short_btn">Send Email</button>
+            <button type="submit" class="short_btn red_btn">No, thanks</button>
+          </div>
         </form>
       </div>
     </section>

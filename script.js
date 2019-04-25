@@ -1,4 +1,5 @@
-function placeholderOff(){
-    document.getElementsByName('user_name').placeholder='fffff';
+console.log('skrypt załadowany');
 
-}
+const text = document.querySelector('#User_name');
+text.placeholder;
+console.dir(text);
