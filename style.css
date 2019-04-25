@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: url('img/background.png') no-repeat center center scroll;
   -webkit-background: url('img/background.png') no-repeat center center scroll;
@@ -16,42 +20,21 @@ header{
 }
 
   .container {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "register"
-    "sign_in"
-    "send"
-    "recover"
-    "subscribe"
-    "footer"
+    max-width: 1150px;
+    margin: 0 auto 20px auto;
   }
 
-  .send {
-    grid-area: send;
+@media (min-width: 960px) {
+  .col {
+    float: left;
+    width: 50%;
   }
-  .sign_in {
-    grid-area: sign_in;
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
   }
-  .recover {
-    grid-area: recover;
-  }
-  .subscribe {
-    grid-area: subscribe;
-  }
-@media (min-width: 700px) {
-   .container{
-     grid-template-columns: 1fr 1fr;
-     grid-template-areas: 
-     "header header"
-     "register sign_in"
-     "send recover"
-     "send subscribe"
-     "send footer"
-   }
 }
-
-
 
   img {
     display: block;
@@ -74,10 +57,11 @@ header{
     width: 452px;
   }
 
-  footer {
-    grid-area: footer;
+  .logo_bottom {
+    margin: 48px auto 20px auto;
     opacity: 0.5;
-    margin: 24px auto 20px auto;
+    display: block;
+    width: 100%;
   }
 
   div.background {

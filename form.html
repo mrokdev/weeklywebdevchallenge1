@@ -16,96 +16,104 @@
   <header>
     <img src="img/top_logo.png" alt="Masteralb top logo">
   </header>
-  
-    <section class="register">
-      <h2>Register form</h2>
-      <div class="background">
-        <form action="#" method="POST">
-          <input type="text" id="User_name" name="user_name" placeholder="Username" autocomplete="name">
-          <br />
-          <input type="password" id="password" name="user_password" placeholder="Password" autocomplete="new-password">
-          <br />
-          <input type="password" id="confirm_password" name="user_password" placeholder="Confirm password" autocomplete="new-password">
-          <br />
-          <input type="email" id="emailRegister" name="userEmailRegister" placeholder="Email" autocomplete="email">
-          <br />
-          <select id="location" name="location">
-            <option value="">Your location</option>
-            <option value="London">London</option>
-            <option value="Paris">Paris</option>
-            <option value="Tokio">Tokio</option>
-          </select>
-          <br />
-          <input id="checkboxRegister" class="checkbox-custom" name="checkboxRegister" type="checkbox" checked>
-          <label for="checkboxRegister" class="checkbox-custom-label">I have read and accept the terms of use.</label>
-          <br />
-          <button type="submit">Sign up</button>
-        </form>
-      </div>
-    </section>
-    <section class="send">
-      <h2>Send Email</h2>
-      <div class="background">
-        <form action="#" method="POST">
-          <input type="text" id="nameSend" name="userNameSend" placeholder="Your name">
-          <br />
-          <input type="email" id="emailSend" name="userEmailSend" placeholder="Your email">
-          <br />
-          <textarea cols="1" rows="9" id="emailMessage" placeholder="Type your message..."></textarea>
-          <br />
-          <input id="checkboxSend" class="checkbox-custom" name="checkboxSend" type="checkbox" checked>
-          <label for="checkboxSend" class="checkbox-custom-label">Send a copy to my Email.</label>
-          <br />
-          <button type="submit">Send Email</button>
-        </form>
-      </div>
-    </section>
-    
-    <section class="sign_in">
-      <h2>Sign In Form</h2>
-      <div class="background">
-        <form action="#" method="POST">
-          <input type="text" id="nameSignIn" name="nameSignIn" placeholder="Your name" autocomplete="name">
-          <br />
-          <input type="password" id="passSignIn" name="passSignIn" placeholder="Your email" autocomplete="current-password">
-          <br />
-          <div class="btn">
-           <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
-            <label for="checkboxSignIn" class="checkbox-custom-label">Remeber me.</label>
-            <button type="submit" class="short_btn">Sign In</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="recover">
-      <h2>Recover Form</h2>
-      <div class="background">
-        <form action="#" method="POST">
-          <input type="email" id="emailRecover" name="emailRecover" placeholder="Your email">
-          <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number">
-          <div class="btn">
-          <button type="submit" class="short_btn">Send</button>
-          <button type="submit" class="short_btn lock_btn">Done</button>
-        </div>
-        </form>
-      </div>
-    </section>
-    <section class="subscribe">
-      <h2>Subscribe Form</h2>
-      <div class="background">
-        <form action="#" method="POST">
-          <input type="email" id="emailSubscribe" name="emailSubscribe" placeholder="Enter your Email" autocomplete="email">
-          <div class="btn">
-            <button type="submit" class="short_btn">Send Email</button>
-            <button type="submit" class="short_btn red_btn">No, thanks</button>
-          </div>
-        </form>
-      </div>
-    </section>
+  <div class="row">
 
-  <footer>
-    <img src="img/bottom_logo.png" alt="Masteralb small logo">
-  </footer>
+    <div class="col">
+        <section class="register">
+            <h2>Register form</h2>
+            <div class="background">
+              <form action="#" method="POST">
+                <input type="text" id="User_name" name="user_name" placeholder="Username" autocomplete="name">
+                <br />
+                <input type="password" id="password" name="user_password" placeholder="Password" autocomplete="new-password">
+                <br />
+                <input type="password" id="confirm_password" name="user_password" placeholder="Confirm password" autocomplete="new-password">
+                <br />
+                <input type="email" id="emailRegister" name="userEmailRegister" placeholder="Email" autocomplete="email">
+                <br />
+                <select id="location" name="location">
+                  <option value="">Your location</option>
+                  <option value="London">London</option>
+                  <option value="Paris">Paris</option>
+                  <option value="Tokio">Tokio</option>
+                </select>
+                <br />
+                <input id="checkboxRegister" class="checkbox-custom" name="checkboxRegister" type="checkbox" checked>
+                <label for="checkboxRegister" class="checkbox-custom-label">I have read and accept the terms of use.</label>
+                <br />
+                <button type="submit">Sign up</button>
+              </form>
+            </div>
+          </section>
+          <section class="send">
+            <h2>Send Email</h2>
+            <div class="background">
+              <form action="#" method="POST">
+                <input type="text" id="nameSend" name="userNameSend" placeholder="Your name">
+                <br />
+                <input type="email" id="emailSend" name="userEmailSend" placeholder="Your email">
+                <br />
+                <textarea cols="1" rows="9" id="emailMessage" placeholder="Type your message..."></textarea>
+                <br />
+                <input id="checkboxSend" class="checkbox-custom" name="checkboxSend" type="checkbox" checked>
+                <label for="checkboxSend" class="checkbox-custom-label">Send a copy to my Email.</label>
+                <br />
+                <button type="submit">Send Email</button>
+              </form>
+            </div>
+          </section>
+    </div>
+    <div class="col">
+        <section class="sign_in">
+            <h2>Sign In Form</h2>
+            <div class="background">
+              <form action="#" method="POST">
+                <input type="text" id="nameSignIn" name="nameSignIn" placeholder="Your name" autocomplete="name">
+                <br />
+                <input type="password" id="passSignIn" name="passSignIn" placeholder="Your email" autocomplete="current-password">
+                <br />
+                <div class="btn">
+                 <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
+                  <label for="checkboxSignIn" class="checkbox-custom-label">Remeber me.</label>
+                  <button type="submit" class="short_btn">Sign In</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section class="recover">
+            <h2>Recover Form</h2>
+            <div class="background">
+              <form action="#" method="POST">
+                <input type="email" id="emailRecover" name="emailRecover" placeholder="Your email">
+                <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number">
+                <div class="btn">
+                <button type="submit" class="short_btn">Send</button>
+                <button type="submit" class="short_btn lock_btn">Done</button>
+              </div>
+              </form>
+            </div>
+          </section>
+          <section class="subscribe">
+            <h2>Subscribe Form</h2>
+            <div class="background">
+              <form action="#" method="POST">
+                <input type="email" id="emailSubscribe" name="emailSubscribe" placeholder="Enter your Email" autocomplete="email">
+                <div class="btn">
+                  <button type="submit" class="short_btn">Send Email</button>
+                  <button type="submit" class="short_btn red_btn">No, thanks</button>
+                </div>
+              </form>
+            </div>
+          </section>
+      <section>
+        <div class="logo_bottom col">
+          <img src="img/bottom_logo.png" alt="Masteralb small logo">
+        </div>
+      </section>
+        
+    </div>
+    
+</div>
 </div>
 </body>
 </html>
