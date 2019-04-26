@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Masteralb Creative</title>
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
@@ -20,7 +20,7 @@
 
     <div class="col">
         <section class="register">
-            <h2>Register form</h2>
+            <h2>Register Form</h2>
             <div class="background">
               <form action="#" method="POST">
                 <input type="text" id="User_name" name="user_name" placeholder="Username" autocomplete="name">
@@ -37,10 +37,10 @@
                   <option value="Paris">Paris</option>
                   <option value="Tokio">Tokio</option>
                 </select>
-                <br />
+                <div class="checkbox-position">
                 <input id="checkboxRegister" class="checkbox-custom" name="checkboxRegister" type="checkbox" checked>
                 <label for="checkboxRegister" class="checkbox-custom-label">I have read and accept the terms of use.</label>
-                <br />
+                </div>
                 <button type="submit">Sign up</button>
               </form>
             </div>
@@ -54,10 +54,10 @@
                 <input type="email" id="emailSend" name="userEmailSend" placeholder="Your email">
                 <br />
                 <textarea cols="1" rows="9" id="emailMessage" placeholder="Type your message..."></textarea>
-                <br />
-                <input id="checkboxSend" class="checkbox-custom" name="checkboxSend" type="checkbox" checked>
-                <label for="checkboxSend" class="checkbox-custom-label">Send a copy to my Email.</label>
-                <br />
+                <div class="checkbox-position">
+                  <input id="checkboxSend" class="checkbox-custom" name="checkboxSend" type="checkbox" checked>
+                  <label for="checkboxSend" class="checkbox-custom-label">Send a copy to my Email.</label>
+                </div>
                 <button type="submit">Send Email</button>
               </form>
             </div>
@@ -74,17 +74,17 @@
                 <br />
                 <div class="btn">
                  <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
-                  <label for="checkboxSignIn" class="checkbox-custom-label">Remeber me.</label>
+                  <label for="checkboxSignIn" class="checkbox-custom-label">Remember me</label>
                   <button type="submit" class="short_btn">Sign In</button>
                 </div>
               </form>
             </div>
           </section>
           <section class="recover">
-            <h2>Recover Form</h2>
+            <h2 class="h2_recover">Recover Form</h2>
             <div class="background">
               <form action="#" method="POST">
-                <input type="email" id="emailRecover" name="emailRecover" placeholder="Your email">
+                <input type="email" id="emailRecover" name="emailRecover" placeholder="Enter your email">
                 <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number">
                 <div class="btn">
                 <button type="submit" class="short_btn">Send</button>
@@ -99,20 +99,18 @@
               <form action="#" method="POST">
                 <input type="email" id="emailSubscribe" name="emailSubscribe" placeholder="Enter your Email" autocomplete="email">
                 <div class="btn">
-                  <button type="submit" class="short_btn">Send Email</button>
+                  <button type="submit" class="short_btn">Subscribe</button>
                   <button type="submit" class="short_btn red_btn">No, thanks</button>
                 </div>
               </form>
             </div>
           </section>
-      <section>
+      <footer>
         <div class="logo_bottom col">
           <img src="img/bottom_logo.png" alt="Masteralb small logo">
         </div>
-      </section>
-        
+      </footer>
     </div>
-    
 </div>
 </div>
 </body>
