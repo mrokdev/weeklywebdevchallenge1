@@ -16,15 +16,15 @@ html {
 header{
   grid-area: header;
   margin-top: 55px;
-  margin-bottom: 48px;
+  margin-bottom: 26px;
 }
 
   .container {
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto 20px auto;
   }
 
-@media (min-width: 960px) {
+@media (min-width: 910px) {
   .col {
     float: left;
     width: 50%;
@@ -40,18 +40,21 @@ header{
     display: block;
     margin: 0 auto;
     opacity: 0.5;
+    height: auto;
   }
 
   h2 {
     font-size: 32px;
     color: #fff;
-    text-shadow: -1px 2px 0px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 2px rgba(43,1,0,0.75);
     /* position: relative; */
     margin: 24px auto 10px auto;
     text-align: center;
   }
 
-  section {
+  section, footer {
+    margin-top: 38px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 452px;
@@ -61,21 +64,21 @@ header{
     margin: 48px auto 20px auto;
     opacity: 0.5;
     display: block;
+    height: auto;
     width: 100%;
   }
 
-  div.background {
-    margin: auto;
+  .background {
+    margin: 0 auto;
     width: 422px;
     display: block;
     position: relative;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 21px 20px 20px 18px;
+    border-radius: 3px;
     text-align: center;
-
   }
 
-  div.background::after {
+  .background::after {
     content: "";
     background-color: #000;
     opacity: 0.25;
@@ -85,7 +88,7 @@ header{
     right: 0px;
     position: absolute;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: auto;
 
   }
@@ -95,8 +98,8 @@ header{
     padding-bottom: 20px;
     background-color: #f4f4f4;
     display: table;
-    border-radius: 5px;
-    width: 100%;
+    border-radius: 3px;
+    width: 385px;
     height: 100%;
   }
 
@@ -106,14 +109,14 @@ header{
   input[type=tel],
   textarea,
   select {
-    width: 85%;
+    width: 338px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
-    padding: 12px;
+    padding: 4px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 3px;
     outline: none;
     border: 1px solid #c6c6c6;
     margin-bottom: 20px;
@@ -122,43 +125,49 @@ header{
 
   input[type=text] {
     background: url('img/user.png'), linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
-    background-size: auto 50%;
-    background-position: center left 15px, center left 55px;
+    background-size: auto 50%, auto 70%;
+    background-position: center left 18px, center left 55px;
     background-repeat: no-repeat;
     padding-left: 70px;
+    height: 40px;
   }
 
   input[type=password] {
     background: url('img/lock.png'), linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
-    background-size: auto 50%;
-    background-position: center left 15px, center left 55px;
+    background-size: auto 50%, auto 70%;
+    background-position: center left 18px, center left 55px;
     background-repeat: no-repeat;
     padding-left: 70px;
+    height: 40px;
 
   }
 
   input[type=email] {
     background-image: url('img/envelope.png'), linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
-    background-size: 24px auto, auto 50%;
+    background-size: 24px auto, auto 70%;
     background-position: center left 15px, center left 55px;
     background-repeat: no-repeat;
     background-color: #f4f4f4;
     padding-left: 70px;
+    height: 40px;
   }
 
   select {
+    width: 338px;
+    height: 39px;
+    color: #808080;
     background: url('img/location.png'), url('img/arrow.png') 2% / 15% no-repeat, linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
     -webkit-background: url('img/location.png'), url('img/arrow.png') 2% / 15% no-repeat, linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
     -moz-background: url('img/location.png'), url('img/arrow.png') 2% / 15% no-repeat, linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
-    background-size: 15px auto, 15px auto, auto 50%;
-    background-position: center left 18px, center right 10px, center left 55px;
+    background-size: 15px auto, 15px auto, auto 50%, auto 70%;
+    background-position: center left 21px, center right 10px, center left 55px;
     background-repeat: no-repeat;
     padding-left: 70px;
+    vertical-align: middle;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     margin-bottom: 10px;
-    color: #808080;
   }
 
 
@@ -169,54 +178,56 @@ header{
   }
 
   /* target Internet Explorer 9 to undo the custom arrow */
-  /* @media screen and (min-width:0\0) {
+  @media screen and (min-width:0\0) {
     select {
       background: none\9;
       padding: 5px\9;
     }
-  } */
+  }
   input[type=tel] {
     background: url('img/phone.png'), linear-gradient(to right, #ddd 0%, #f4f4f4 2px, #f4f4f4 100%);
-    background-size: auto 50%;
-    background-position: center left 15px, center left 55px;
+    background-size: auto 55%, auto 70%;
+    background-position: center left 23px, center left 55px;
     background-repeat: no-repeat;
     padding-left: 70px;
+    height: 40px;
   }
   button {
    font-family: inherit;
-   font-size: 18px;
-   font-style: bold;
-   border: 1px solid #9ad32c;
+   font-size: 20px;
+   font-weight: 500;
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
    border-radius: 3px;
    color: #fff;
-   width: 85%;
-   height: 49px;
+   width: 339px;
+   height: 48px;
    outline: none;
-   padding: 2px;
-   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
-   background-color: #B0DD5A;
-   background-image: -webkit-linear-gradient(top, #B0DD5A, #3A9A00);
-   background-image: -moz-linear-gradient(top, #B0DD5A, #3A9A00);
-   background-image: -ms-linear-gradient(top, #B0DD5A, #3A9A00);
-   background-image: -o-linear-gradient(top, #B0DD5A, #3A9A00);
-   background-image: linear-gradient(to bottom, #B0DD5A, #3A9A00);
+   padding: 1px;
+   text-shadow: 1px 1px 2px rgba(46, 46, 46, 0.8);
+   background-image: linear-gradient(0deg, #7cc01e 0%, #a3d741 100%);
+   border: 1px solid #3b9a00;
   }
 
   button:hover{
    border: 1px solid #7ead24;
-   background-color: #9cd430;
-   background-image: -webkit-linear-gradient(top, #9cd430, #276700);
-   background-image: -moz-linear-gradient(top, #9cd430, #276700);
-   background-image: -ms-linear-gradient(top, #9cd430, #276700);
-   background-image: -o-linear-gradient(top, #9cd430, #276700);
-   background-image: linear-gradient(to bottom, #9cd430, #276700);
+   background-image: -webkit-linear-gradient(top, #9cd430, #62a800);
+   background-image: -moz-linear-gradient(top, #9cd430, #62a800);
+   background-image: -ms-linear-gradient(top, #9cd430, #62a800);
+   background-image: -o-linear-gradient(top, #9cd430, #62a800);
+   background-image: linear-gradient(to bottom, #9cd430, #62a800);
   }
+  .checkbox-position{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 339px; 
+    display: flex; 
+  }
+
   .btn {
     margin-left: auto; 
     margin-right: auto; 
-    width: 85%; 
+    width: 339px; 
     display: flex; 
     justify-content: space-between;
   }
@@ -225,7 +236,7 @@ header{
     width: 148px;
     height: 39px;
   }
-  
+
   .red_btn {
     width: 148px;
     height: 39px;
@@ -241,7 +252,8 @@ header{
   }
 
   .lock_btn {
-    opacity: 0.6;
+    background-image: linear-gradient(0deg, #a9cf80 0%, #c6e1a7 100%);
+    border: 1px solid #90ca6d;
     cursor: not-allowed;
   }
 
@@ -255,7 +267,7 @@ header{
   .checkbox-custom-label {
     display: inline-block;
     vertical-align: middle;
-    margin: 0px 0px 10px 0px;
+    margin: 2px 0px 10px 0px;
     cursor: pointer;
   }
 
@@ -263,10 +275,10 @@ header{
     position: relative;
   }
 
-  .checkbox-custom+.checkbox-custom-label:before {
+  .checkbox-custom + .checkbox-custom-label:before {
     content: '';
     background: #f4f4f4;
-    border: 1px solid #ddd;
+    border: 1px solid #c6c6c6;
     display: inline-block;
     vertical-align: middle;
     width: 16px;
@@ -294,4 +306,9 @@ header{
   textarea {
     padding-left: 15px;
     background-color: #f4f4f4;
+    margin-bottom: 10px;
+  }
+  .h2_recover {
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
