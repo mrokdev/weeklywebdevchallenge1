@@ -23,13 +23,13 @@
             <h2>Register Form</h2>
             <div class="background">
               <form action="#" method="POST" name="register">
-                <input type="text" id="User_name" name="user_name" placeholder="Username" autocomplete="name">
+                <input type="text" id="User_name" name="user_name" placeholder="Username" autocomplete="name" required>
                 <br />
-                <input type="password" id="password" name="user_password" placeholder="Password" autocomplete="new-password">
+                <input type="password" id="password" name="user_password" placeholder="Password" autocomplete="new-password" required>
                 <br />
-                <input type="password" id="confirm_password" name="user_password" placeholder="Confirm password" autocomplete="new-password">
+                <input type="password" id="confirm_password" name="user_password" placeholder="Confirm password" autocomplete="new-password" required>
                 <br />
-                <input type="email" id="emailRegister" name="userEmailRegister" placeholder="Email" autocomplete="email">
+                <input type="email" id="emailRegister" name="userEmailRegister" placeholder="Email" autocomplete="email" required>
                 <br />
                 <select id="location" name="location">
                   <option value="">Your location</option>
@@ -49,9 +49,9 @@
             <h2>Send Email</h2>
             <div class="background">
               <form action="#" method="POST">
-                <input type="text" id="nameSend" name="userNameSend" placeholder="Your name">
+                <input type="text" id="nameSend" name="userNameSend" placeholder="Your name"required>
                 <br />
-                <input type="email" id="emailSend" name="userEmailSend" placeholder="Your email">
+                <input type="email" id="emailSend" name="userEmailSend" placeholder="Your email" required>
                 <br />
                 <textarea cols="1" rows="9" id="emailMessage" placeholder="Type your message..."></textarea>
                 <div class="checkbox-position">
@@ -68,9 +68,9 @@
             <h2>Sign In Form</h2>
             <div class="background">
               <form action="#" method="POST">
-                <input type="text" id="nameSignIn" name="nameSignIn" placeholder="Your name" autocomplete="name">
+                <input type="text" id="nameSignIn" name="nameSignIn" placeholder="Your name" autocomplete="name" required>
                 <br />
-                <input type="email" id="emailSignIn" name="emailSignIn" placeholder="Your email" autocomplete="current-password">
+                <input type="email" id="emailSignIn" name="emailSignIn" placeholder="Your email" autocomplete="current-password" required>
                 <br />
                 <div class="btn">
                  <input id="checkboxSignIn" class="checkbox-custom" name="checkboxSignIn" type="checkbox" checked>
@@ -84,8 +84,8 @@
             <h2 class="h2_recover">Recover Form</h2>
             <div class="background">
               <form action="#" method="POST">
-                <input type="email" id="emailRecover" name="emailRecover" placeholder="Enter your email">
-                <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number">
+                <input type="email" id="emailRecover" name="emailRecover" placeholder="Enter your email" required>
+                <input type="tel" id="telRecover" name="telRecover" autocomplete="tel" placeholder="Enter your Phone number" required>
                 <div class="btn">
                 <button type="submit" class="short_btn">Send</button>
                 <button type="submit" class="short_btn lock_btn">Done</button>
